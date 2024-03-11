@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F1FAFF;
+    font-family: Inter;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(12, 45, 72, 1);
+    color: aliceblue;
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+.start {
+    color: #B1D4E0;
+    display: flex;
+    align-items: center;
+    /* flex-flow: column wrap; */
+}
+
+.start>input {
+    align-self: flex-start;
+    border-radius: 5px;
+    color: black;
+
+}
+
+/* .big-section {
+    background: rgba(20, 93, 160, 1);
+    background-color: #0C2D48;
+    margin: 2%;
+    padding: 1%;
+    height: 85vh;
+} */
+.big-section {
+    display: flex;
+    flex-flow: column wrap;
+    background: rgba(20, 93, 160, 1);
+    background-color: #0C2D48;
+    margin: 2%;
+    padding: 1%;
+    height: 85vh;
+}
+
+.big-section>hr {
+    margin: 1% 0;
+}
+
+.caption {
+    font-size: .8em;
+    color: rgba(177, 212, 224, 1)
+}
+
+.expenses {
+    color: #B1D4E0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.expense {
+    color: red;
+}
+
+.expenses>label {
+    width: 50%;
+    padding-bottom: 2%;
+}
+
+.expenses>input {
+    font-family: Inter;
+    width: 25%;
+    align-self: flex-start;
+    border-radius: .3rem;
+    color: black;
+    height: 2em;
+}
+
+.difference {
+    background-color: #145DA0;
+    margin-top: 1em;
+    padding: 1.5em;
+    color: white;
+    text-align: center;
+    width: 50%;
+    border-radius: 0.5em;
+    border: #F1FAFF 2px solid;
+}
+
+/* .descriptions {
+    display: flex;
+    flex-flow: wrap;
+    margin: 1em;
+    position: absolute;
+    top: 10%;
+    width: 45%;
+    height: 75%;
+    left: 50%;
+    size: 5em;
+} */
+
+.descriptions {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1em;
+    width: 45%;
+    height: 75%;
+    size: 5em;
+}
+
+.calculator_description {
+    display: flex;
+    flex-direction: column;
+    background-color: #145DA0;
+    color: #B1D4E0;
+    padding: 5%;
+    border: #B1D4E0;
+    border-radius: 0.5em;
+    border: #F1FAFF 2px solid;
+    margin: 3%;
+}
+
+.description_two {
+    display: flex;
+    flex-direction: column;
+    background-color: #145DA0;
+    color: #B1D4E0;
+    padding: 5%;
+    margin-top: 1em;
+    border-radius: 0.5em;
+    width: 100%;
+    size: 5em;
+    margin: 3%;
+    border: #F1FAFF 2px solid;
+}
+
+hr {
+    width: 50%;
+}
+
+.start {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: flex-start;
+}
+
+.startInput {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em 0px 1em;
+}
+
+.first {
+    margin-left: 0px;
+}
+
+#gross-income, #tax, #monthly {
+    border-radius: 0.5em;
+    font-family: Inter;
+    width: 100%;
+    height: 2em;
+}
+
+#careerSelect {
+    border-radius: 0.5em;
+    font-family: Inter;
+    color: #0C2D48;
+} 
+
+@media only screen and (max-width: 640px) {
+    .expenses {
+        width: 100%;
+    }
+
+    .expenses>label {
+        width: 50%;
+        padding-bottom: 2%;
+    }
+
+    .expenses>input {
+        width: 35%;
+        align-self: flex-start;
+        border-radius: .3rem;
+    }
+
+    .difference {
+        width: 100%;
+    }
+
+    .big-section {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 5%;
+        height: 0%;
+    }
+
+    .big-section>hr {
+        width: 100%;
+    }
+
+    .startInput {
+        display: flex;
+        flex-direction: column;
+        margin: 1em 1em 0px 0em;
+    }
+
+    .descriptions {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* .expense {
+        display: flex;
+        position: relative;
+        left: 18em;
+    }
+
+    .caption {
+        display: none;
+    }
+
+    .captionMedia {
+        display: flex;
+        color: rgba(177, 212, 224, 1);
+        margin: 1em;
+    }
+
+    .incomeStart {
+        display: flex;
+        position: relative;
+        top: 8em;
+        left: 18em;
+        margin: 1em;
+    }
+
+    .start {
+        display: flex;
+    }
+    */
+
+}

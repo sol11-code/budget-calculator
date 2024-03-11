@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>Budget Calculator</header>
+
+    <section class="big-section">
+        <section>
+            <select id="careerSelect">
+                <option value="" disabled selected>Select your career</option>
+                <option>Accountant</option>
+                <option>Highway Patrol</option>
+                <option>Lawyer</option>
+                <option>Adv. Tractor/Trailer Driver</option>
+                <option>Agricultural Engineer</option>
+                <option>Architect</option>
+                <option>Auto Tech/Mechanic</option>
+                <option>Aviation Tech/Mechanic</option>
+                <option>Biologist</option>
+                <option>Bus Driver</option>
+                <option>Business Dev. Officer</option>
+                <option>Business Manager</option>
+                <option>CNC Manufacturing</option>
+                <option>Carpenter</option>
+                <option>Chef</option>
+            </select>
+        </section>
+        <section class="start">
+            <section class="startInput first">
+                <label for="gross-income">Gross Annual Income</label>
+                <input type="number" name="gross-income" id="gross-income">
+            </section>
+            <p>-</p>
+            <section class="startInput">
+                <label for="tax">Tax Deductions</label>
+                <input type="number" name="tax" id="tax">
+            </section>
+            <p>=</p>
+            <section class="startInput">
+                <label for="net-monthly">Net Monthly Income</label>
+                <input type="number" name="net-monthly" id="monthly">
+            </section>
+
+            <!-- <p class="caption"> Gross Annual Income - Tax Deductions = Net Monthly Income</p> -->
+            <!-- <p class="captionMedia">Gross Annual Income</p>
+            <p class="captionMedia">Tax Deductions</p>            
+            <p class="captionMedia">Net Monthly Income</p> -->
+
+
+        </section>
+
+        <hr>
+        <section class="expenses">
+            <label>Net Monthly Income</label>
+            <input class="expense" type="number" placeholder="$">
+            <label>Savings</label>
+            <input class="expense" type="number" placeholder="$">
+            <label>Food</label>
+            <input class="expense" type="number" placeholder="$">
+            <label>Housing</label>
+            <input class="expense" type="number" placeholder="$">
+            <label>Utilities</label>
+            <input class="expense" type="number" placeholder="$">
+            <label>Transportation</label>
+            <input class="expense" type="number" placeholder="$">
+            <label>Taxes</label>
+            <input class="expense" type="number" placeholder="$">
+            <label>Entertainment</label>
+            <input class="expense" type="number" placeholder="$">
+            <label>Debt</label>
+            <input class="expense" type="number" placeholder="$">
+            <label>Phone</label>
+            <input class="expense" type="number" placeholder="$">
+            <label>Other</label>
+            <input class="expense" type="number" placeholder="$">
+        </section>
+        <section class="difference">
+            <p>Difference</p>
+            <p>$00.00</p>
+        </section>
+
+        <section class="descriptions">
+            <section class="calculator_description">
+                <h1>What is the function of this calculator?</h1>
+                <p>The function of this calculator is to calculate your net monthly income by subtracting expenses from
+                    your
+                    gross monthly income (can be based on career selection or what you manually type in the monthly
+                    income
+                    input).</p>
+            </section>
+
+            <section class="description_two">
+                <h1>Information about Savings</h1>
+                <p>(information about selected expense)</p>
+            </section>
+        </section>
+
+    </section>
+
+
+</body>
+
+</html>
